@@ -1,0 +1,11 @@
+UXTerm*background: darkslategrey
+UXTerm*foreground: SpringGreen
+UXTerm*savelines: 512
+UXTerm*font: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*-
+Emacs:*font: -*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*-
+urxvt*scrollBar:false
+urxvt*font: xft:Terminus:pixelsize=14:antialias=false
+*background: darkslategrey
+*foreground: SpringGreen
+!! for colours see: http://phraktured.net/terminal-colors/
+

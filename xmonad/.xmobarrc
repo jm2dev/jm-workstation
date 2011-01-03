@@ -1,0 +1,22 @@
+Config { font = "-b&h-lucida-medium-r-normal-sans-10-100-75-75-p-58-iso8859-1"
+	, bgColor = "#2f4f4f"
+	, fgColor = "#ffaaaa"
+	, position = Bottom
+	, lowerOnStart = True
+	, commands = [ Run Weather "EGLC" ["-t","<tempC>C","-L","40","-H","80","--high","red","--low","#3333FF"] 36000
+		, Run Com "echo" ["$USER"] "username" 864000
+		, Run Com "hostname" ["-s"] "hostname" 864000
+		, Run Com "uname" ["-sr"] "os" 864000
+		, Run Date "%a %b %_d" "date" 36000
+		, Run Date "%H:%M:%S" "time" 10
+		, Run Com "mem.sh" ["-tm"] "memtot" 36000
+		, Run Com "mem.sh" ["-um"] "memused" 10
+		, Run Com "mem.sh" ["-pct"] "mempct" 10
+		, Run Com "loadavg.sh" [] "loadavg" 10
+		, Run Com "batt.sh" [] "batt" 600
+		, Run StdinReader
+	]
+	, sepChar = "'"
+	, alignSep = "}{"
+	, template = "'StdinReader' } <fc=#3d3d07>|</fc> 'username' <fc=#3d3d07>|</fc> 'hostname' <fc=#3d3d07>|</fc> 'os' <fc=#3d3d07>|</fc> Mem 'memused'/'memtot'mb <fc=#3d3d07>|</fc> Load 'loadavg' <fc=#3d3d07>|</fc> Batt 'batt' <fc=#3d3d07>|</fc>{'date' <fc=#3d3d07>|</fc> 'time' <fc=#3d3d07>|</fc> 'EGLC'"
+}
