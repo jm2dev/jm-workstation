@@ -1,0 +1,6 @@
+xsetroot -cursor_name left_ptr
+xrdb -load $HOME/.Xdefaults
+nitrogen --restore
+xscreensaver -no-splash &
+xset b 0
+exec xmonad
