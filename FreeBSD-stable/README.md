@@ -12,29 +12,29 @@ Instructions
 
 rc.conf disabled services (no tomcat, database, X system) just the minimum to be online.
 
-Reboot, login as root and run
+* Reboot, login as root and run
 
-# csup -g -L 2 csup-UK-stable-supfile
+        $ csup -g -L 2 csup-UK-stable-supfile
 
-Rebuild world
+* Rebuild world
 
-# cd /usr/src
-# make -j8 buildworld
-# make -j8 buildkernel
-# make -j8 installkernel
-# shutdown -r now
+        $ cd /usr/src
+        $ make -j8 buildworld
+        $ make -j8 buildkernel
+        $ make -j8 installkernel
+        $ shutdown -r now
 
-Reboot in single user mode
+* Reboot in single user mode
 
-# adjkerntz -i
-# mount -a -t ufs
-# mergemaster -p
-# cd /usr/src
-# make -j8 installworld
-# mergemaster
-# reboot
+       $ adjkerntz -i
+       $ mount -a -t ufs
+       $ mergemaster -p
+       $ cd /usr/src
+       $ make -j8 installworld
+       $ mergemaster
+       $ reboot
 
-Update ports
+* Update ports
 
-# csup -g -L 2 portupgrade-UK-stable-supfile
-# portupgrade -aP
+       $ csup -g -L 2 portupgrade-UK-stable-supfile
+       $ portupgrade -aP
