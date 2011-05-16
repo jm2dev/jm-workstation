@@ -2,6 +2,11 @@
 (setq linum-format "%d ")
 (global-linum-mode 1)
 
+;;; UTF-8
+(prefer-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+
 ;;;; Fix junk characters in shell mode
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
@@ -10,7 +15,7 @@
 
 ;; In every buffer, the line which contains the cursor will be fully
 ;; highlighted
-(global-hl-line-mode 1)
+;;(global-hl-line-mode 1)
 
 ;; ===== Set standard indent to 2 rather that 4 ====
 (setq standard-indent 4)
