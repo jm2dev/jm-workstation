@@ -27,21 +27,14 @@ rc.conf disabled services (no tomcat, database, X system) just the minimum to be
 * Reboot in single user mode
 
         $ adjkerntz -i
-
         $ mount -a -t ufs
-
         $ mergemaster -p
-
         $ cd /usr/src
-
         $ make -j8 installworld
-
         $ mergemaster
-
         $ reboot
 
 * Update ports
 
        $ csup -g -L 2 portupgrade-UK-stable-supfile
-
        $ portupgrade -aP
