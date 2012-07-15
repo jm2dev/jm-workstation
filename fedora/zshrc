@@ -1,0 +1,21 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/jm/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+export JVM_LIBDIR=/usr/lib/jvm-exports/java-1.7.0-openjdk-1.7.0.3.x86_64
+
+PATH=$PATH:$HOME/.rvm/bin:$HOME/Aplicaciones/idea-IC-117.117/bin 
+
