@@ -1,15 +1,17 @@
-Overview
-========
+* Overview
 
 My configuration files to work in an efficient way, or I think so :)
 
-emacs
-=====
+** emacs
 
 My customizations to show line numbers, and use several modes for grails, groovy and XML development.
 
-xrandr
-======
+** xrandr
 
 Script to configure my dual display desktop.
+
+** fedora
+
+I need to customize my freebsd/debian version settings to work in
+Fedora.
 
