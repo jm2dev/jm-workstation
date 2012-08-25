@@ -1,0 +1,28 @@
+#!/bin/sh
+m_pagesize() { sysctl -n hw.pagesize; }
+m_availpages() { expr `sysctl -n vm.stats.vm.v_free_count` + `sysctl -n vm.stats.vm.v_inactive_count` + `sysctl -n vm.stats.vm.v_cache_count`; }
+m_avail() { expr `m_availpages` \* `m_pagesize`; }
+m_total() { sysctl -n hw.physmem; }
+m_used() { expr `m_total` - `m_avail`; }
+m_to_mb() { expr $1 / 1048576; }
+
+case $1 in
+    -f)  m_avail;;
+    -fm) m_to_mb `m_avail`;;
+    -t)  m_total;;
+    -tm) m_to_mb `m_total`;;
+    -u)  m_used;;
+    -um) m_to_mb `m_used`;;
+    -p)  expr `m_used` \* 100 / `m_total`;;
+    -h)  echo "usage:";
+	 echo
+	 echo "-h	Help";
+	 echo "-f	Free";
+	 echo "-fm	Free (megabytes)";
+	 echo "-p	Percent used";
+	 echo "-t	Total";
+	 echo "-tm	Total (megabytes)";
+	 echo "-u	Used";
+	 echo "-um	Used (megabytes)";;
+    *)	 echo "Total: `m_total`, Avail: `m_avail`, Used: `m_used`";;
+esac

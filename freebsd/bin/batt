@@ -1,0 +1,16 @@
+#!/bin/sh
+mins=`sysctl -n hw.acpi.battery.time`
+case `sysctl -n hw.acpi.battery.state` in
+1)  state="discharging";;
+2)  state="charging";;
+*)  state="";;
+esac
+if [ $mins -ge 0 ]
+then
+    state="$mins mins, $state"
+fi
+if [ "$state" != "" ]
+then
+    state=" ($state)"
+fi
+echo "`sysctl -n hw.acpi.battery.life`%$state"
