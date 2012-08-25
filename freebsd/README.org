@@ -1,0 +1,13 @@
+#+TITLE: FreeBSD 9.1
+#+AUTHOR: Jose Miguel
+
+* User settings
+
+- xinitrc -> .xinitrc
+- Xdefaults -> .Xdefaults
+- login_conf -> .login_conf
+- zshrc -> .zshrc
+
+* System settings
+
+- boot.loader.conf -> /boot/loader.conf
