@@ -7,7 +7,14 @@
 - Xdefaults -> .Xdefaults
 - login_conf -> .login_conf
 - zshrc -> .zshrc
+- xmobarrc -> .xmobarrc
+- xmonad -> .xmonad
+
+* Memory, battery and load scripts
+
+Thanks to [[http://www.chipstips.com/?p%3D488][Chip's tips for developers]].
 
 * System settings
 
 - boot.loader.conf -> /boot/loader.conf
+
