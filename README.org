@@ -10,6 +10,11 @@ My customizations to show line numbers, and use several modes for grails, groovy
 
 Script to configure my dual display desktop.
 
+** tmux
+
+My nice tmux configuration, I forgot where I found it so credits are
+owned. Copy the tmux.conf file to $HOME/.tmux.conf
+
 ** fedora
 
 I need to customize my freebsd/debian version settings to work in
