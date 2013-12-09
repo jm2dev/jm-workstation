@@ -6,6 +6,7 @@ My configuration files to work in an efficient way, or I think so :)
 
 My customizations to show line numbers, and use several modes for grails, groovy and XML development.
 
+Recently I moved to [[http://overtone.github.io/emacs-live/][emacs live]], you can see my customizations [[https://github.com/jm2dev/emacs-live-jm-pack][here]].
 ** xrandr
 
 Script to configure my dual display desktop.
@@ -24,3 +25,6 @@ Fedora.
 
 A tiling window manager, like xmonad. You need to copy *config* to
 ~/.i3/config.
+** redshift
+
+[[http://jonls.dk/redshift/][Redshift]] is an application to adjust the colour temperature of the screen. See my settings for London in that folder, and copy the file to ~/.config/redshift.conf.
