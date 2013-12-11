@@ -1,0 +1,12 @@
+*Abstract
+
+This are configuration files to use with [[http://i3wm.org][i3]] window manager.
+
+After login in an [[http://software.schmorp.de/pkg/rxvt-unicode.html][urxvt]] terminal, [[http://www.mozilla.org/en-US/firefox/new/][firefox]], [[http://www.gnu.org/software/emacs/][emacs]] and [[http://www.mozilla.org/en-US/thunderbird/][thunderbird]] will be openned in their own workspaces.
+
+Additionally [[http://jonls.dk/redshift/][redshift]] is always started to control colour temperature.
+
+*Setup
+
+- config should be saved to ~/.i3/config
+- i3status.conf should be saved to ~/.i3status.conf
