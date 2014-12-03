@@ -1,0 +1,27 @@
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# # Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# I prefer vim as default editor
+#export ALTERNATE_EDITOR=""
+#export EDITOR="emacsclient -t"                  # $EDITOR should open in terminal
+#export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI with non-daemon as alternate
+
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0
+
+
+typeset -U path
+path=(~/bin ~/.rbenv/bin ~/.rbenv/shims ~/Aplicaciones/idea-IC/bin ~/netbeans-8.0.1/bin ~/Aplicaciones/activator-1.0.11 /usr/local/heroku/bin ~/bin/ec2-api-tools-1.6.12.2 ~/bin/cloud-search-tools-1.0.2.3-2013.08.02/bin /usr/local/ec2/amitools/bin $path)
+
+source $HOME/.rbenv/completions/rbenv.zsh
