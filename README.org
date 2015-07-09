@@ -56,3 +56,12 @@ A tiling window manager, like xmonad. You need to copy *config* to
 ** redshift
 
 [[http://jonls.dk/redshift/][Redshift]] is an application to adjust the colour temperature of the screen. See my settings for London in that folder, and copy the file to ~/.config/redshift.conf.
+** Colors
+
+In no particular order I like:
+
+- [[http://kippura.org/zenburnpage/][zenburn]]
+- [[http://ethanschoonover.com/solarized][solarized]]
+- [[http://color.smyck.org/][smyck]]
+
+See this [[https://gist.github.com/apfohl/4407164][gist]] for smyck in unix.
